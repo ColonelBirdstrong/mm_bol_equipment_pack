@@ -68,3 +68,11 @@ description = "Pause and unpause to reload!"
 type = "Enum"
 options = [ "Vanilla Shield", "MM3D Hero's Shield", "BotW Kite Shield", "OoT3D Hylian Shield", "Spirit Tracks Shield", "ALTTP Fighter's Shield", "ALTTP Red Shield" ]
 default = "Vanilla Shield"
+
+[[manifest.config_options]]
+id = "bird_greatfairysword_model"
+name = "Great Fairy's Sword model"
+description = "Pause and unpause to reload!"
+type = "Enum"
+options = [ "Vanilla GFS", "Claymore (Dark Souls)", "Moonlight Greatsword" ]
+default = "Vanilla GFS"

@@ -1,5 +1,4 @@
-build/src/birdequipment.o: src\birdequipment.c include\modding.h \
-  mm-decomp\include\global.h mm-decomp\include\z64.h \
+build/src/gBoLDS1Claymore.o: src\gBoLDS1Claymore.c \
   mm-decomp\include\ultra64.h mm-decomp\include\PR\ultratypes.h \
   mm-decomp\include\PR\gbi.h mm-decomp\include\PR\mbi.h \
   mm-decomp\include\PR\abi.h mm-decomp\include\PR\gu.h \
@@ -24,7 +23,8 @@ build/src/birdequipment.o: src\birdequipment.c include\modding.h \
   mm-decomp\include\PR\sptask.h mm-decomp\include\PR\rcp.h \
   mm-decomp\include\PR\rdp.h mm-decomp\include\PR\R4300.h \
   mm-decomp\include\PR\ucode.h mm-decomp\include\PR\viint.h \
-  mm-decomp\include\PR\xstdio.h mm-decomp\include\libc\math.h \
+  mm-decomp\include\PR\xstdio.h mm-decomp\include\global.h \
+  mm-decomp\include\z64.h mm-decomp\include\libc\math.h \
   mm-decomp\include\libc\stdbool.h mm-decomp\include\libc\stdlib.h \
   mm-decomp\include\libc64\qrand.h mm-decomp\include\color.h \
   mm-decomp\include\controller.h mm-decomp\include\gfx.h \
@@ -102,8 +102,4 @@ build/src/birdequipment.o: src\birdequipment.c include\modding.h \
   include\dummy_headers\assets\code\sub_s\sub_s.h \
   mm-decomp\include\z64rumble.h mm-decomp\include\functions.h \
   mm-decomp\include\variables.h mm-decomp\include\stack.h \
-  mm-decomp\include\macros.h include\recomputils.h \
-  include\recompconfig.h src\gBoLMM3DHeroShield.h src\gBoLKiteShield.h \
-  src\gBoLOoT3DHyShield.h src\gBoLSTShield.h src\gBoLFighterShield.h \
-  src\gBoLRedShield.h src\gBoLDS1Claymore.h \
-  src\gBoLMoonlightGreatsword.h
+  mm-decomp\include\macros.h

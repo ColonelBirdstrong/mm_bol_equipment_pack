@@ -5,13 +5,25 @@
 #include "ultra64.h"
 #include "segment_symbols.h"
 
-// Equipment Files
+// Hero's Shield
 #include "gBoLMM3DHeroShield.h"
 #include "gBoLKiteShield.h"
 #include "gBoLOoT3DHyShield.h"
 #include "gBoLSTShield.h"
 #include "gBoLFighterShield.h"
 #include "gBoLRedShield.h"
+
+// Mirror Shield
+
+// Kokiri Sword
+
+// Razor Sword
+
+// Gilded Sword
+
+// Great Fairy's Sword
+#include "gBoLDS1Claymore.h"
+#include "gBoLMoonlightGreatsword.h"
 
 DECLARE_ROM_SEGMENT(object_link_child);
 DECLARE_ROM_SEGMENT(gameplay_keep);
@@ -45,6 +57,12 @@ enum BirdHeroShieldModel {
     HERO_SHIELD_STSHIELD,
     HERO_SHIELD_ALTTPFIGHTERSHIELD,
     HERO_SHIELD_ALTTPREDSHIELD,
+};
+
+enum BirdGreatFairySwordModel {
+    GREATFAIRYSWORD_OFF,
+    GREATFAIRYSWORD_DS1CLAYMORE,
+    GREATFAIRYSWORD_MOONLIGHTGREATSWORD,
 };
 
 void* gRam;
@@ -88,6 +106,19 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
             break;
         case HERO_SHIELD_ALTTPREDSHIELD:
         gSPBranchList(to_patch , gBoLRedShield);
+            break;
+        }
+        Gfx* to_patch_2 = Lib_SegmentedToVirtual(gLinkHumanGreatFairysSwordDL);
+        switch (recomp_get_config_u32("bird_greatfairysword_model"))
+        {
+        case GREATFAIRYSWORD_OFF:
+            ;
+            break;
+        case GREATFAIRYSWORD_DS1CLAYMORE:
+        gSPBranchList(to_patch_2 , gBoLDS1Claymore);
+            break;
+        case GREATFAIRYSWORD_MOONLIGHTGREATSWORD:
+        gSPBranchList(to_patch_2 , gBoLMoonlightGreatsword);
             break;
         }
         gSegments[0x06] = old_segment_6;

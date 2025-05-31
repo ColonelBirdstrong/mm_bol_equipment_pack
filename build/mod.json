@@ -19,6 +19,18 @@
                     "ALTTP Red Shield"
                 ],
                 "type" : "Enum"
+            },
+            {
+                "default" : "Vanilla GFS",
+                "description" : "Pause and unpause to reload!",
+                "id" : "bird_greatfairysword_model",
+                "name" : "Great Fairy's Sword model",
+                "options" : [
+                    "Vanilla GFS",
+                    "Claymore (Dark Souls)",
+                    "Moonlight Greatsword"
+                ],
+                "type" : "Enum"
             }
         ]
     },
