@@ -1,0 +1,32 @@
+{
+    "authors" : [
+        "Bird of Light"
+    ],
+    "config_schema" : {
+        "options" : [
+            {
+                "default" : "Vanilla Shield",
+                "description" : "Pause and unpause to reload!",
+                "id" : "bird_heroshield_model",
+                "name" : "Hero's Shield model",
+                "options" : [
+                    "Vanilla Shield",
+                    "MM3D Hero's Shield",
+                    "BotW Kite Shield",
+                    "OoT3D Hylian Shield",
+                    "Spirit Tracks Shield",
+                    "ALTTP Fighter's Shield",
+                    "ALTTP Red Shield"
+                ],
+                "type" : "Enum"
+            }
+        ]
+    },
+    "description" : "This is an example mod for Majora's Mask: Recompiled that can be used as a template for creating mods. When this mod is enabled, you will always perform a quickspin when swinging your sword.\n\nFor more details, see https://github.com/Zelda64Recomp/MMRecompModTemplate.",
+    "display_name" : "Bird of Light's Equipment Pack",
+    "game_id" : "mm",
+    "id" : "bol_birdequipment",
+    "minimum_recomp_version" : "1.2.0",
+    "short_description" : "Various sword and shield models",
+    "version" : "1.0.0"
+}

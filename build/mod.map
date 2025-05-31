@@ -1,0 +1,241 @@
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0        0     1 RAMBASE = 0x81000000
+81000000 81000000       18     4 .rodata
+81000000 81000000       18     4         build/src/birdequipment.o:(.rodata)
+81000018 81000018       16     1 .rodata.str1.1
+81000018 81000018       16     1         <internal>:(.rodata.str1.1)
+81000030 81000030        0    16 .text
+81000030 81000030        0    16         build/src/birdequipment.o:(.text)
+81000030 81000030        0    16         build/src/gBoLFighterShield.o:(.text)
+81000030 81000030        0    16         build/src/gBoLKiteShield.o:(.text)
+81000030 81000030        0    16         build/src/gBoLMM3DHeroShield.o:(.text)
+81000030 81000030        0    16         build/src/gBoLOoT3DHyShield.o:(.text)
+81000030 81000030        0    16         build/src/gBoLRedShield.o:(.text)
+81000030 81000030        0    16         build/src/gBoLSTShield.o:(.text)
+81000030 81000030       58     4 .recomp_import.*
+81000030 81000030       58     4         build/src/birdequipment.o:(.recomp_import.*)
+81000030 81000030        8     1                 recomp_alloc
+81000038 81000038        8     1                 recomp_free
+81000040 81000040       10     1                 recomp_printf
+81000050 81000050        8     1                 recomp_get_config_u32
+81000058 81000058        8     1                 recomp_get_config_double
+81000060 81000060        8     1                 recomp_get_config_string
+81000068 81000068        8     1                 recomp_free_config_string
+81000070 81000070        8     1                 recomp_get_mod_version
+81000078 81000078        8     1                 recomp_change_save_file
+81000080 81000080        8     1                 recomp_get_save_file_path
+81000088 81000088       28     4 .recomp_hook.DmaMgr_ProcessRequest
+81000088 81000088       28     4         build/src/birdequipment.o:(.recomp_hook.DmaMgr_ProcessRequest)
+81000088 81000088       28     1                 on_DmaMgr_RequestSync
+810000b0 810000b0      10c     4 .recomp_hook_return.DmaMgr_ProcessRequest
+810000b0 810000b0      10c     4         build/src/birdequipment.o:(.recomp_hook_return.DmaMgr_ProcessRequest)
+810000b0 810000b0      10c     1                 after_dma
+810001c0 810001c0    27d80    16 .data
+810001c0 810001c0        0    16         build/src/birdequipment.o:(.data)
+810001c0 810001c0     7908    16         build/src/gBoLFighterShield.o:(.data)
+810001c0 810001c0      400     1                 gBoLFighterShield_Handle_rgba16
+810005c0 810005c0      200     1                 gBoLFighterShield_Metal_rgba16
+810007c0 810007c0      800     1                 gBoLFighterShield_ShieldBack_ci4
+81000fc0 81000fc0       20     1                 gBoLFighterShield_ShieldBack_pal_rgba16
+81000fe0 81000fe0      800     1                 gBoLFighterShield_Ref_rgba16
+810017e0 810017e0      200     1                 gBoLFighterShield_Triforce_rgba16
+810019e0 810019e0      800     1                 gBoLFighterShield_ShieldFace_ci4
+810021e0 810021e0       18     1                 gBoLFighterShield_ShieldFace_pal_rgba16
+810021f8 810021f8       80     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_vtx_cull
+81002278 81002278       c0     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_vtx_0
+81002338 81002338       50     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_tri_0
+81002388 81002388     1380     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_vtx_1
+81003708 81003708      440     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_tri_1
+81003b48 81003b48      190     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_vtx_2
+81003cd8 81003cd8       90     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_tri_2
+81003d68 81003d68      150     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_vtx_3
+81003eb8 81003eb8       40     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_tri_3
+81003ef8 81003ef8     2cb0     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_vtx_4
+81006ba8 81006ba8      9d8     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_tri_4
+81007580 81007580      190     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_vtx_5
+81007710 81007710       90     1                 gBoLFighterShield_gBoLFighterShield_mesh_layer_Opaque_tri_5
+810077a0 810077a0       68     1                 mat_gBoLFighterShield_M3D_HS_Handle_f3d_layerOpaque
+81007808 81007808       68     1                 mat_gBoLFighterShield_M3D_HS_Metal_f3d_layerOpaque
+81007870 81007870       80     1                 mat_gBoLFighterShield_LTTPF_ShieldBack_f3d_layerOpaque
+810078f0 810078f0       68     1                 mat_gBoLFighterShield_LTTPF_ShieldRedGems_f3d_layerOpaque
+81007958 81007958       68     1                 mat_gBoLFighterShield_M3D_HS_Gold_f3d_layerOpaque
+810079c0 810079c0       80     1                 mat_gBoLFighterShield_LTTPF_ShieldFace_f3d_layerOpaque
+81007a40 81007a40       88     1                 gBoLFighterShield
+81007ad0 81007ad0     4ba8    16         build/src/gBoLKiteShield.o:(.data)
+81007ad0 81007ad0     1000     1                 gBoLKiteShield_ShieldBack_Fast_rgba16
+81008ad0 81008ad0      400     1                 gBoLKiteShield_Beads_ci8
+81008ed0 81008ed0       48     1                 gBoLKiteShield_Beads_pal_rgba16
+81008f18 81008f18      400     1                 gBoLKiteShield_Handle_ci8
+81009318 81009318       28     1                 gBoLKiteShield_Handle_pal_rgba16
+81009340 81009340      800     1                 gBoLKiteShield_Feather_ci8
+81009b40 81009b40      1b0     1                 gBoLKiteShield_Feather_pal_rgba16
+81009cf0 81009cf0      800     1                 gBoLKiteShield_ShieldBottom_fast_ci8
+8100a4f0 8100a4f0      158     1                 gBoLKiteShield_ShieldBottom_fast_pal_rgba16
+8100a648 8100a648      800     1                 gBoLKiteShield_ShieldTop_Fast_ci8
+8100ae48 8100ae48      140     1                 gBoLKiteShield_ShieldTop_Fast_pal_rgba16
+8100af88 8100af88       80     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_vtx_cull
+8100b008 8100b008      160     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_vtx_0
+8100b168 8100b168       88     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_tri_0
+8100b1f0 8100b1f0      1e0     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_vtx_1
+8100b3d0 8100b3d0       d0     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_tri_1
+8100b4a0 8100b4a0       80     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_vtx_2
+8100b520 8100b520       28     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_tri_2
+8100b548 8100b548      360     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_vtx_3
+8100b8a8 8100b8a8       60     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_tri_3
+8100b908 8100b908      7b0     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_vtx_4
+8100c0b8 8100c0b8      160     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_tri_4
+8100c218 8100c218       b0     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_vtx_5
+8100c2c8 8100c2c8       40     1                 gBoLKiteShield_gBoLKiteShield_mesh_layer_Opaque_tri_5
+8100c308 8100c308       68     1                 mat_gBoLKiteShield_Kite_ShieldBack_f3d_layerOpaque
+8100c370 8100c370       80     1                 mat_gBoLKiteShield_Kite_Beads_f3d_layerOpaque
+8100c3f0 8100c3f0       80     1                 mat_gBoLKiteShield_Kite_ShieldHandle_f3d_layerOpaque
+8100c470 8100c470       80     1                 mat_gBoLKiteShield_Kite_Feathers_NOCULL_f3d_layerOpaque
+8100c4f0 8100c4f0       80     1                 mat_gBoLKiteShield_Kite_ShieldBottom_f3d_layerOpaque
+8100c570 8100c570       80     1                 mat_gBoLKiteShield_Kite_ShieldTop_f3d_layerOpaque
+8100c5f0 8100c5f0       88     1                 gBoLKiteShield
+8100c680 8100c680     7c60    16         build/src/gBoLMM3DHeroShield.o:(.data)
+8100c680 8100c680      200     1                 gBoLMM3DHeroShield_Metal_rgba16
+8100c880 8100c880      200     1                 gBoLMM3DHeroShield_ShieldBevel_rgba16
+8100ca80 8100ca80     1000     1                 gBoLMM3DHeroShield_ShieldLogo_1_rgba16
+8100da80 8100da80      800     1                 gBoLMM3DHeroShield_WoodBack_rgba16
+8100e280 8100e280      400     1                 gBoLMM3DHeroShield_Handle_rgba16
+8100e680 8100e680      400     1                 gBoLMM3DHeroShield_ShieldBlue_rgba16
+8100ea80 8100ea80      200     1                 gBoLMM3DHeroShield_Triforce_rgba16
+8100ec80 8100ec80       80     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_vtx_cull
+8100ed00 8100ed00     3d60     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_vtx_0
+81012a60 81012a60      9a8     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_tri_0
+81013408 81013408      240     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_vtx_1
+81013648 81013648       60     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_tri_1
+810136a8 810136a8      1b0     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_vtx_2
+81013858 81013858       78     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_tri_2
+810138d0 810138d0      1a0     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_vtx_3
+81013a70 81013a70       48     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_tri_3
+81013ab8 81013ab8       a0     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_vtx_4
+81013b58 81013b58       28     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_tri_4
+81013b80 81013b80       d0     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_vtx_5
+81013c50 81013c50       48     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_tri_5
+81013c98 81013c98      270     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_vtx_6
+81013f08 81013f08       68     1                 gBoLMM3DHeroShield_gBoLMM3DHeroShield_mesh_layer_Opaque_tri_6
+81013f70 81013f70       68     1                 mat_gBoLMM3DHeroShield_M3D_HS_Metal_f3d_layerOpaque
+81013fd8 81013fd8       68     1                 mat_gBoLMM3DHeroShield_M3D_HS_Holes_f3d_layerOpaque
+81014040 81014040       68     1                 mat_gBoLMM3DHeroShield_M3D_HS_Bird_f3d_layerOpaque
+810140a8 810140a8       68     1                 mat_gBoLMM3DHeroShield_M3D_HS_WoodBack_f3d_layerOpaque
+81014110 81014110       68     1                 mat_gBoLMM3DHeroShield_M3D_HS_Handle_f3d_layerOpaque
+81014178 81014178       68     1                 mat_gBoLMM3DHeroShield_M3D_HS_Blue_f3d_layerOpaque
+810141e0 810141e0       68     1                 mat_gBoLMM3DHeroShield_M3D_HS_Gold_f3d_layerOpaque
+81014248 81014248       98     1                 gBoLMM3DHeroShield
+810142e0 810142e0     4ed0    16         build/src/gBoLOoT3DHyShield.o:(.data)
+810142e0 810142e0      200     1                 gBoLOoT3DHyShield_Metal_rgba16
+810144e0 810144e0      400     1                 gBoLOoT3DHyShield_Handle_rgba16
+810148e0 810148e0      200     1                 gBoLOoT3DHyShield_Triforce_rgba16
+81014ae0 81014ae0      400     1                 gBoLOoT3DHyShield_WoodBack_ci8
+81014ee0 81014ee0       c8     1                 gBoLOoT3DHyShield_WoodBack_pal_rgba16
+81014fa8 81014fa8      800     1                 gBoLOoT3DHyShield_ShieldBlue_ci4
+810157a8 810157a8       20     1                 gBoLOoT3DHyShield_ShieldBlue_pal_rgba16
+810157c8 810157c8       80     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_vtx_cull
+81015848 81015848     25d0     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_vtx_0
+81017e18 81017e18      6b0     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_tri_0
+810184c8 810184c8       c0     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_vtx_1
+81018588 81018588       28     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_tri_1
+810185b0 810185b0      4c0     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_vtx_2
+81018a70 81018a70       90     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_tri_2
+81018b00 81018b00      140     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_vtx_3
+81018c40 81018c40       48     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_tri_3
+81018c88 81018c88      1f0     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_vtx_4
+81018e78 81018e78       88     1                 gBoLOoT3DHyShield_gBoLOoT3DHyShield_mesh_layer_Opaque_tri_4
+81018f00 81018f00       68     1                 mat_gBoLOoT3DHyShield_M3D_HS_Metal_f3d_001_layerOpaque
+81018f68 81018f68       68     1                 mat_gBoLOoT3DHyShield_M3D_HS_Handle_f3d_001_layerOpaque
+81018fd0 81018fd0       68     1                 mat_gBoLOoT3DHyShield_M3D_HS_Gold_f3d_001_layerOpaque
+81019038 81019038       80     1                 mat_gBoLOoT3DHyShield_M3D_HyS_WoodBack_f3d_001_layerOpaque
+810190b8 810190b8       80     1                 mat_gBoLOoT3DHyShield_M3D_HyS_Blue_f3d_001_layerOpaque
+81019138 81019138       78     1                 gBoLOoT3DHyShield
+810191b0 810191b0     82b0    16         build/src/gBoLRedShield.o:(.data)
+810191b0 810191b0      400     1                 gBoLRedShield_Handle_rgba16
+810195b0 810195b0      200     1                 gBoLRedShield_Metal_rgba16
+810197b0 810197b0      800     1                 gBoLRedShield_ShieldBack_ci4
+81019fb0 81019fb0       20     1                 gBoLRedShield_ShieldBack_pal_rgba16
+81019fd0 81019fd0      400     1                 gBoLRedShield_RefFire_ci8
+8101a3d0 8101a3d0      1c8     1                 gBoLRedShield_RefFire_pal_rgba16
+8101a598 8101a598      200     1                 gBoLRedShield_Triforce_rgba16
+8101a798 8101a798      800     1                 gBoLRedShield_ShieldFaceFire_ci4
+8101af98 8101af98       18     1                 gBoLRedShield_ShieldFaceFire_pal_rgba16
+8101afb0 8101afb0       80     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_vtx_cull
+8101b030 8101b030       c0     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_vtx_0
+8101b0f0 8101b0f0       50     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_tri_0
+8101b140 8101b140     1dd0     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_vtx_1
+8101cf10 8101cf10      5b8     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_tri_1
+8101d4c8 8101d4c8      190     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_vtx_2
+8101d658 8101d658       90     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_tri_2
+8101d6e8 8101d6e8      150     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_vtx_3
+8101d838 8101d838       40     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_tri_3
+8101d878 8101d878     2cb0     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_vtx_4
+81020528 81020528      9d8     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_tri_4
+81020f00 81020f00      190     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_vtx_5
+81021090 81021090       90     1                 gBoLRedShield_gBoLRedShield_mesh_layer_Opaque_tri_5
+81021120 81021120       68     1                 mat_gBoLRedShield_M3D_HS_Handle_f3d_layerOpaque
+81021188 81021188       68     1                 mat_gBoLRedShield_M3D_HS_Metal_f3d_layerOpaque
+810211f0 810211f0       80     1                 mat_gBoLRedShield_LTTPF_ShieldBack_f3d_layerOpaque
+81021270 81021270       80     1                 mat_gBoLRedShield_LTTPF_ShieldRedGemsRed_f3d_layerOpaque
+810212f0 810212f0       68     1                 mat_gBoLRedShield_M3D_HS_Gold_f3d_layerOpaque
+81021358 81021358       80     1                 mat_gBoLRedShield_LTTPF_ShieldFaceRed_f3d_layerOpaque
+810213d8 810213d8       88     1                 gBoLRedShield
+81021460 81021460     6ae0    16         build/src/gBoLSTShield.o:(.data)
+81021460 81021460      100     1                 gBoLSTShield_Geyshine_i8
+81021560 81021560      400     1                 gBoLSTShield_ShieldBack_ci8
+81021960 81021960       98     1                 gBoLSTShield_ShieldBack_pal_rgba16
+810219f8 810219f8      400     1                 gBoLSTShield_ShieldFront_ci8
+81021df8 81021df8       38     1                 gBoLSTShield_ShieldFront_pal_rgba16
+81021e30 81021e30       40     1                 gBoLSTShield_Gem_ci8
+81021e70 81021e70       28     1                 gBoLSTShield_Gem_pal_rgba16
+81021e98 81021e98       80     1                 gBoLSTShield_gBoLSTShield_mesh_layer_Opaque_vtx_cull
+81021f18 81021f18     4b80     1                 gBoLSTShield_gBoLSTShield_mesh_layer_Opaque_vtx_0
+81026a98 81026a98      c78     1                 gBoLSTShield_gBoLSTShield_mesh_layer_Opaque_tri_0
+81027710 81027710      2a0     1                 gBoLSTShield_gBoLSTShield_mesh_layer_Opaque_vtx_1
+810279b0 810279b0       80     1                 gBoLSTShield_gBoLSTShield_mesh_layer_Opaque_tri_1
+81027a30 81027a30       c0     1                 gBoLSTShield_gBoLSTShield_mesh_layer_Opaque_vtx_2
+81027af0 81027af0       38     1                 gBoLSTShield_gBoLSTShield_mesh_layer_Opaque_tri_2
+81027b28 81027b28      190     1                 gBoLSTShield_gBoLSTShield_mesh_layer_Opaque_vtx_3
+81027cb8 81027cb8       38     1                 gBoLSTShield_gBoLSTShield_mesh_layer_Opaque_tri_3
+81027cf0 81027cf0       68     1                 mat_gBoLSTShield_ST_Metal_f3d_layerOpaque
+81027d58 81027d58       80     1                 mat_gBoLSTShield_ST_WoodBack_f3d_layerOpaque
+81027dd8 81027dd8       80     1                 mat_gBoLSTShield_ST_ShieldFront_f3d_layerOpaque
+81027e58 81027e58       80     1                 mat_gBoLSTShield_ST_ShieldGem_TEXGEN_f3d_layerOpaque
+81027ed8 81027ed8       68     1                 gBoLSTShield
+81027f40 81027f40       10    16 .bss
+81027f40 81027f40        c    16         build/src/birdequipment.o:(.bss)
+81027f40 81027f40        4     1                 gRam
+81027f44 81027f44        4     1                 gVrom
+81027f48 81027f48        4     1                 gSize
+81027f50 81027f50        0    16         build/src/gBoLFighterShield.o:(.bss)
+81027f50 81027f50        0    16         build/src/gBoLKiteShield.o:(.bss)
+81027f50 81027f50        0    16         build/src/gBoLMM3DHeroShield.o:(.bss)
+81027f50 81027f50        0    16         build/src/gBoLOoT3DHyShield.o:(.bss)
+81027f50 81027f50        0    16         build/src/gBoLRedShield.o:(.bss)
+81027f50 81027f50        0    16         build/src/gBoLSTShield.o:(.bss)
+       0        0        0     1 .mdebug.abi32
+       0        0        0     1         build/src/birdequipment.o:(.mdebug.abi32)
+       0        0        0     1         build/src/gBoLFighterShield.o:(.mdebug.abi32)
+       0        0        0     1         build/src/gBoLKiteShield.o:(.mdebug.abi32)
+       0        0        0     1         build/src/gBoLMM3DHeroShield.o:(.mdebug.abi32)
+       0        0        0     1         build/src/gBoLOoT3DHyShield.o:(.mdebug.abi32)
+       0        0        0     1         build/src/gBoLRedShield.o:(.mdebug.abi32)
+       0        0        0     1         build/src/gBoLSTShield.o:(.mdebug.abi32)
+       0        0       30     4 .rel.recomp_hook.DmaMgr_ProcessRequest
+       0        0       30     4         build/src/birdequipment.o:(.rel.recomp_hook.DmaMgr_ProcessRequest)
+       0        0      118     4 .rel.recomp_hook_return.DmaMgr_ProcessRequest
+       0        0      118     4         build/src/birdequipment.o:(.rel.recomp_hook_return.DmaMgr_ProcessRequest)
+       0        0       30     4 .rel.rodata
+       0        0       30     4         build/src/birdequipment.o:(.rel.rodata)
+       0        0      a08     4 .rel.data
+       0        0      1d0     4         build/src/gBoLFighterShield.o:(.rel.data)
+     1d0      1d0      110     4         build/src/gBoLKiteShield.o:(.rel.data)
+     2e0      2e0      1f0     4         build/src/gBoLMM3DHeroShield.o:(.rel.data)
+     4d0      4d0      160     4         build/src/gBoLOoT3DHyShield.o:(.rel.data)
+     630      630      200     4         build/src/gBoLRedShield.o:(.rel.data)
+     830      830      1d8     4         build/src/gBoLSTShield.o:(.rel.data)
+       0        0      ca0     4 .symtab
+       0        0      ca0     4         <internal>:(.symtab)
+       0        0      11a     1 .shstrtab
+       0        0      11a     1         <internal>:(.shstrtab)
+       0        0     1ffb     1 .strtab
+       0        0     1ffb     1         <internal>:(.strtab)
