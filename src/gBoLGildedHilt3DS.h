@@ -1,0 +1,17 @@
+extern u64 gBoLGildedHilt3DS_GildedSword_ci8[];
+extern u64 gBoLGildedHilt3DS_GildedSword_pal_rgba16[];
+extern u64 gBoLGildedHilt3DS_GoldBlade_ci8[];
+extern u64 gBoLGildedHilt3DS_GoldBlade_pal_rgba16[];
+extern u64 gBoLGildedHilt3DS_Pommel_ci4[];
+extern u64 gBoLGildedHilt3DS_Pommel_pal_rgba16[];
+extern Vtx gBoLGildedHilt3DS_gBoLGildedHilt3DS_mesh_layer_Opaque_vtx_cull[8];
+extern Vtx gBoLGildedHilt3DS_gBoLGildedHilt3DS_mesh_layer_Opaque_vtx_0[228];
+extern Gfx gBoLGildedHilt3DS_gBoLGildedHilt3DS_mesh_layer_Opaque_tri_0[];
+extern Vtx gBoLGildedHilt3DS_gBoLGildedHilt3DS_mesh_layer_Opaque_vtx_1[24];
+extern Gfx gBoLGildedHilt3DS_gBoLGildedHilt3DS_mesh_layer_Opaque_tri_1[];
+extern Vtx gBoLGildedHilt3DS_gBoLGildedHilt3DS_mesh_layer_Opaque_vtx_2[38];
+extern Gfx gBoLGildedHilt3DS_gBoLGildedHilt3DS_mesh_layer_Opaque_tri_2[];
+extern Gfx mat_gBoLGildedHilt3DS_GildedSword_f3d_layerOpaque[];
+extern Gfx mat_gBoLGildedHilt3DS_Gilded_BladeGold_f3d_layerOpaque[];
+extern Gfx mat_gBoLGildedHilt3DS_Gilded_Pommel_f3d_layerOpaque[];
+extern Gfx gBoLGildedHilt3DS[];

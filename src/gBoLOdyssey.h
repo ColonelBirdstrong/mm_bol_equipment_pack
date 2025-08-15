@@ -1,0 +1,17 @@
+extern u64 gBoLOdyssey_Metal1_ci8[];
+extern u64 gBoLOdyssey_Metal1_pal_rgba16[];
+extern u64 gBoLOdyssey_Metal2_ci8[];
+extern u64 gBoLOdyssey_Metal2_pal_rgba16[];
+extern u64 gBoLOdyssey_Handle_ci8[];
+extern u64 gBoLOdyssey_Handle_pal_rgba16[];
+extern Vtx gBoLOdyssey_gBoLOdyssey_mesh_layer_Opaque_vtx_cull[8];
+extern Vtx gBoLOdyssey_gBoLOdyssey_mesh_layer_Opaque_vtx_0[179];
+extern Gfx gBoLOdyssey_gBoLOdyssey_mesh_layer_Opaque_tri_0[];
+extern Vtx gBoLOdyssey_gBoLOdyssey_mesh_layer_Opaque_vtx_1[164];
+extern Gfx gBoLOdyssey_gBoLOdyssey_mesh_layer_Opaque_tri_1[];
+extern Vtx gBoLOdyssey_gBoLOdyssey_mesh_layer_Opaque_vtx_2[8];
+extern Gfx gBoLOdyssey_gBoLOdyssey_mesh_layer_Opaque_tri_2[];
+extern Gfx mat_gBoLOdyssey_Odyssey_Metal1_f3d_layerOpaque[];
+extern Gfx mat_gBoLOdyssey_Odyssey_Metal2_f3d_layerOpaque[];
+extern Gfx mat_gBoLOdyssey_Odyssey_SwordHandle_f3d_layerOpaque[];
+extern Gfx gBoLOdyssey[];

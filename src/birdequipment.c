@@ -19,14 +19,22 @@
 #include "gBoLMagicShield.h"
 
 // Kokiri Sword
+#include "gBoLOdyssey.h"
 
 // Razor Sword
+#include "gBoLDjinn.h"
 
 // Gilded Sword
 #include "gBoLMagicSwordHilt.h"
 #include "gBoLMagicSwordBlade.h"
+
 #include "gBoLValentine.h"
 
+#include "gBoLGildedHilt3DS.h"
+#include "gBoLGildedBlade3DS.h"
+#include "gBoLGildedSheath3DS.h"
+
+#include "gBoLCorona.h"
 
 // Great Fairy's Sword
 #include "gBoLDS1Claymore.h"
@@ -58,10 +66,12 @@ extern Gfx* gPlayerSwords[];
 // Kokiri Sword
 extern Gfx* gKokiriSwordBladeDL[];
 extern Gfx* gKokiriSwordHandleDL[];
+extern Gfx* gLinkHumanKokiriSwordSheathDL[];
 
 // Razor Sword
 extern Gfx* gRazorSwordBladeDL[];
 extern Gfx* gRazorSwordHandleDL[];
+extern Gfx* gLinkHumanRazorSwordSheathDL[];
 
 // Gilded Sword
 extern Gfx* gLinkHumanGildedSwordHandleDL[];
@@ -107,8 +117,20 @@ enum BirdMirrorShieldModel {
 
 enum BirdGildedSwordModel {
     GILDEDSWORD_OFF,
+    GILDEDSWORD_3DS,
     GILDEDSWORD_MAGICSWORD,
     GILDEDSWORD_VALENTINE,
+    GILDEDSWORD_CORONA,
+};
+
+enum BirdKokiriSwordModel {
+    KOKIRISWORD_OFF,
+    KOKIRISWORD_ODYSSEY,
+};
+
+enum BirdRazorSwordModel {
+    RAZORSWORD_OFF,
+    RAZORSWORD_DJINN,
 };
 
 void* gRam;
@@ -129,6 +151,11 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
     if (gVrom == SEGMENT_ROM_START(object_link_child)) {
         uintptr_t old_segment_6 = gSegments[0x06];
         gSegments[0x06] = OS_K0_TO_PHYSICAL(gRam);
+
+        ///////////////////
+        // Hero's Shield //
+        ///////////////////
+
         Gfx* to_patch_heroshield = Lib_SegmentedToVirtual(gLinkHumanHerosShieldDL);
         switch (recomp_get_config_u32("bird_heroshield_model"))
         {
@@ -155,6 +182,10 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
             break;
         }
         
+        /////////////////////////
+        // Great Fairy's Sword //
+        /////////////////////////
+
         Gfx* to_patch_gfs = Lib_SegmentedToVirtual(gLinkHumanGreatFairysSwordDL);
         switch (recomp_get_config_u32("bird_greatfairysword_model"))
         {
@@ -177,6 +208,11 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
         gSPBranchList(to_patch_gfs , gBoLBurningDragonsword);
             break;
         }
+
+        ////////////////
+        // Stone Mask //
+        ////////////////
+
         switch (recomp_get_config_u32("bird_stonemask_model"))
             {
         case STONEMASK_OFF:
@@ -186,6 +222,11 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
         D_801C0B20[PLAYER_MASK_STONE - 1] = gJoJoStoneMask;
             break;
         }
+
+        ///////////////////
+        // Mirror Shield //
+        ///////////////////
+
         Gfx* to_patch_mirrorshield = Lib_SegmentedToVirtual(gLinkHumanMirrorShieldDL);
         switch (recomp_get_config_u32("bird_mirrorshield_model"))
         {
@@ -202,11 +243,97 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
         gSPBranchList(to_patch_mirrorshield , gBoLMagicShield);
             break;
         }
+
+        ////////////////////////
+        // Kokiri Sword Blade //
+        ////////////////////////
+
+        Gfx* to_patch_kokiriswordblade = Lib_SegmentedToVirtual(gKokiriSwordBladeDL);
+        switch (recomp_get_config_u32("bird_kokirisword_model"))
+        {
+        case KOKIRISWORD_OFF:
+            ;
+            break;
+        case KOKIRISWORD_ODYSSEY:
+        gSPBranchList(to_patch_kokiriswordblade , gEmptyDL);
+            break;
+        }
+
+        // Kokiri Sword Hilt
+        Gfx* to_patch_kokiriswordhilt = Lib_SegmentedToVirtual(gKokiriSwordHandleDL);
+        switch (recomp_get_config_u32("bird_kokirisword_model"))
+        {
+        case KOKIRISWORD_OFF:
+            ;
+            break;
+        case KOKIRISWORD_ODYSSEY:
+        gSPBranchList(to_patch_kokiriswordhilt , gBoLOdyssey);
+            break;
+        }
+
+        // Kokiri Sword Scabbard
+        Gfx* to_patch_kokiriswordsheath = Lib_SegmentedToVirtual(gLinkHumanKokiriSwordSheathDL);
+        switch (recomp_get_config_u32("bird_kokirisword_model"))
+        {
+        case KOKIRISWORD_OFF:
+            ;
+            break;
+        case KOKIRISWORD_ODYSSEY:
+        gSPBranchList(to_patch_kokiriswordsheath , gEmptyDL);
+            break;
+        }
+
+        ///////////////////////
+        // Razor Sword Blade //
+        ///////////////////////
+
+        Gfx* to_patch_razorswordblade = Lib_SegmentedToVirtual(gRazorSwordBladeDL);
+        switch (recomp_get_config_u32("bird_razorsword_model"))
+        {
+        case RAZORSWORD_OFF:
+            ;
+            break;
+        case RAZORSWORD_DJINN:
+        gSPBranchList(to_patch_razorswordblade , gEmptyDL);
+            break;
+        }
+
+        // Razor Sword Hilt
+        Gfx* to_patch_razorswordhilt = Lib_SegmentedToVirtual(gRazorSwordHandleDL);
+        switch (recomp_get_config_u32("bird_razorsword_model"))
+        {
+        case RAZORSWORD_OFF:
+            ;
+            break;
+        case RAZORSWORD_DJINN:
+        gSPBranchList(to_patch_razorswordhilt , gBoLDjinn);
+            break;
+        }
+
+        // Razor Sword Scabbard
+        Gfx* to_patch_razorswordsheath = Lib_SegmentedToVirtual(gLinkHumanRazorSwordSheathDL);
+        switch (recomp_get_config_u32("bird_razorsword_model"))
+        {
+        case RAZORSWORD_OFF:
+            ;
+            break;
+        case RAZORSWORD_DJINN:
+        gSPBranchList(to_patch_razorswordsheath , gEmptyDL);
+            break;
+        }
+
+        ////////////////////////
+        // Gilded Sword Blade //   
+        ////////////////////////
+
         Gfx* to_patch_gildedswordblade = Lib_SegmentedToVirtual(gLinkHumanGildedSwordBladeDL);
         switch (recomp_get_config_u32("bird_gildedsword_model"))
         {
         case GILDEDSWORD_OFF:
             ;
+            break;
+        case GILDEDSWORD_3DS:
+        gSPBranchList(to_patch_gildedswordblade , gBoLGildedBlade3DS);
             break;
         case GILDEDSWORD_MAGICSWORD:
         gSPBranchList(to_patch_gildedswordblade , gBoLMagicSwordBlade);
@@ -214,12 +341,20 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
         case GILDEDSWORD_VALENTINE:
         gSPBranchList(to_patch_gildedswordblade , gEmptyDL);
             break;
+        case GILDEDSWORD_CORONA:
+        gSPBranchList(to_patch_gildedswordblade , gEmptyDL);
+            break;
         }
+
+        // Gilded Sword Hilt
         Gfx* to_patch_gildedswordhilt = Lib_SegmentedToVirtual(gLinkHumanGildedSwordHandleDL);
         switch (recomp_get_config_u32("bird_gildedsword_model"))
         {
         case GILDEDSWORD_OFF:
             ;
+            break;
+        case GILDEDSWORD_3DS:
+        gSPBranchList(to_patch_gildedswordhilt , gBoLGildedHilt3DS);
             break;
         case GILDEDSWORD_MAGICSWORD:
         gSPBranchList(to_patch_gildedswordhilt , gBoLMagicSwordHilt);
@@ -227,12 +362,20 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
         case GILDEDSWORD_VALENTINE:
         gSPBranchList(to_patch_gildedswordhilt , gBoLValentine);
             break;
+        case GILDEDSWORD_CORONA:
+        gSPBranchList(to_patch_gildedswordhilt , gBoLCorona);
+            break;
         }
+
+        // Gilded Sword Scabbard
         Gfx* to_patch_gildedswordsheath = Lib_SegmentedToVirtual(gLinkHumanGildedSwordSheathDL);
         switch (recomp_get_config_u32("bird_gildedsword_model"))
         {
         case GILDEDSWORD_OFF:
             ;
+            break;
+        case GILDEDSWORD_3DS:
+        gSPBranchList(to_patch_gildedswordsheath , gBoLGildedSheath3DS);
             break;
         case GILDEDSWORD_MAGICSWORD:
             ;
@@ -240,7 +383,12 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
         case GILDEDSWORD_VALENTINE:
         gSPBranchList(to_patch_gildedswordsheath , gEmptyDL);
             break;
+        case GILDEDSWORD_CORONA:
+        gSPBranchList(to_patch_gildedswordsheath , gEmptyDL);
+            break;
         }
+
+        // Do not touch
         gSegments[0x06] = old_segment_6;
     }
     gVrom = 0;

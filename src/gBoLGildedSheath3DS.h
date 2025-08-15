@@ -1,0 +1,17 @@
+extern u64 gBoLGildedSheath3DS_GildedSheath_ci8[];
+extern u64 gBoLGildedSheath3DS_GildedSheath_pal_rgba16[];
+extern u64 gBoLGildedSheath3DS_GoldBlade_ci8[];
+extern u64 gBoLGildedSheath3DS_GoldBlade_pal_rgba16[];
+extern u64 gBoLGildedSheath3DS_GildedSword_ci8[];
+extern u64 gBoLGildedSheath3DS_GildedSword_pal_rgba16[];
+extern Vtx gBoLGildedSheath3DS_gBoLGildedSheath3DS_mesh_layer_Opaque_vtx_cull[8];
+extern Vtx gBoLGildedSheath3DS_gBoLGildedSheath3DS_mesh_layer_Opaque_vtx_0[26];
+extern Gfx gBoLGildedSheath3DS_gBoLGildedSheath3DS_mesh_layer_Opaque_tri_0[];
+extern Vtx gBoLGildedSheath3DS_gBoLGildedSheath3DS_mesh_layer_Opaque_vtx_1[36];
+extern Gfx gBoLGildedSheath3DS_gBoLGildedSheath3DS_mesh_layer_Opaque_tri_1[];
+extern Vtx gBoLGildedSheath3DS_gBoLGildedSheath3DS_mesh_layer_Opaque_vtx_2[8];
+extern Gfx gBoLGildedSheath3DS_gBoLGildedSheath3DS_mesh_layer_Opaque_tri_2[];
+extern Gfx mat_gBoLGildedSheath3DS_GildedSheath_f3d_layerOpaque[];
+extern Gfx mat_gBoLGildedSheath3DS_Gilded_BladeGold_f3d_layerOpaque[];
+extern Gfx mat_gBoLGildedSheath3DS_GildedSword_f3d_layerOpaque[];
+extern Gfx gBoLGildedSheath3DS[];

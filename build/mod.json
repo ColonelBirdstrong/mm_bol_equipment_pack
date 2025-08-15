@@ -21,18 +21,6 @@
                 "type" : "Enum"
             },
             {
-                "default" : "Vanilla Gilded Sword",
-                "description" : "Pause and unpause to reload!",
-                "id" : "bird_gildedsword_model",
-                "name" : "Gilded Sword model",
-                "options" : [
-                    "Vanilla Gilded Sword",
-                    "Magic Sword",
-                    "Valentine"
-                ],
-                "type" : "Enum"
-            },
-            {
                 "default" : "Vanilla Mirror Shield",
                 "description" : "Pause and unpause to reload!",
                 "id" : "bird_mirrorshield_model",
@@ -46,6 +34,42 @@
                 "type" : "Enum"
             },
             {
+                "default" : "Vanilla Kokiri Sword",
+                "description" : "Pause and unpause to reload!",
+                "id" : "bird_kokirisword_model",
+                "name" : "Kokiri Sword model",
+                "options" : [
+                    "Vanilla Kokiri Sword",
+                    "Odyssey"
+                ],
+                "type" : "Enum"
+            },
+            {
+                "default" : "Vanilla Razor Sword",
+                "description" : "Pause and unpause to reload!",
+                "id" : "bird_razorsword_model",
+                "name" : "Razor Sword model",
+                "options" : [
+                    "Vanilla Razor Sword",
+                    "Djinn"
+                ],
+                "type" : "Enum"
+            },
+            {
+                "default" : "Vanilla Gilded Sword",
+                "description" : "Pause and unpause to reload!",
+                "id" : "bird_gildedsword_model",
+                "name" : "Gilded Sword model",
+                "options" : [
+                    "Vanilla Gilded Sword",
+                    "3DS Gilded Sword",
+                    "Magic Sword",
+                    "Valentine",
+                    "Corona"
+                ],
+                "type" : "Enum"
+            },
+            {
                 "default" : "Vanilla GFS",
                 "description" : "Pause and unpause to reload!",
                 "id" : "bird_greatfairysword_model",
@@ -54,9 +78,9 @@
                     "Vanilla GFS",
                     "Claymore (Dark Souls)",
                     "Moonlight Greatsword",
-                    "Pursuer's Greatsword",
+                    "Pursuer Greatsword",
                     "Ultima Weapon",
-                    "Burning Dragon Sword"
+                    "Burning Dragonsword"
                 ],
                 "type" : "Enum"
             },

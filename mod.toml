@@ -67,14 +67,6 @@ options = [ "Vanilla Shield", "MM3D Hero's Shield", "BotW Kite Shield", "OoT3D H
 default = "Vanilla Shield"
 
 [[manifest.config_options]]
-id = "bird_gildedsword_model"
-name = "Gilded Sword model"
-description = "Pause and unpause to reload!"
-type = "Enum"
-options = [ "Vanilla Gilded Sword", "Magic Sword", "Valentine" ]
-default = "Vanilla Gilded Sword"
-
-[[manifest.config_options]]
 id = "bird_mirrorshield_model"
 name = "Mirror Shield model"
 description = "Pause and unpause to reload!"
@@ -83,11 +75,35 @@ options = [ "Vanilla Mirror Shield", "Improved OoT Shield", "ALTTP Mirror Shield
 default = "Vanilla Mirror Shield"
 
 [[manifest.config_options]]
+id = "bird_kokirisword_model"
+name = "Kokiri Sword model"
+description = "Pause and unpause to reload!"
+type = "Enum"
+options = [ "Vanilla Kokiri Sword", "Odyssey" ]
+default = "Vanilla Kokiri Sword"
+
+[[manifest.config_options]]
+id = "bird_razorsword_model"
+name = "Razor Sword model"
+description = "Pause and unpause to reload!"
+type = "Enum"
+options = [ "Vanilla Razor Sword", "Djinn" ]
+default = "Vanilla Razor Sword"
+
+[[manifest.config_options]]
+id = "bird_gildedsword_model"
+name = "Gilded Sword model"
+description = "Pause and unpause to reload!"
+type = "Enum"
+options = [ "Vanilla Gilded Sword", "3DS Gilded Sword", "Magic Sword", "Valentine", "Corona" ]
+default = "Vanilla Gilded Sword"
+
+[[manifest.config_options]]
 id = "bird_greatfairysword_model"
 name = "Great Fairy's Sword model"
 description = "Pause and unpause to reload!"
 type = "Enum"
-options = [ "Vanilla GFS", "Claymore (Dark Souls)", "Moonlight Greatsword", "Pursuer's Greatsword", "Ultima Weapon", "Burning Dragon Sword" ]
+options = [ "Vanilla GFS", "Claymore (Dark Souls)", "Moonlight Greatsword", "Pursuer Greatsword", "Ultima Weapon", "Burning Dragonsword" ]
 default = "Vanilla GFS"
 
 [[manifest.config_options]]
