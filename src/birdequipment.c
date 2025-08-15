@@ -16,12 +16,17 @@
 // Mirror Shield
 #include "gBoLImprovedMirrorShield.h"
 #include "gBoLALTTPMirrorShield.h"
+#include "gBoLMagicShield.h"
 
 // Kokiri Sword
 
 // Razor Sword
 
 // Gilded Sword
+#include "gBoLMagicSwordHilt.h"
+#include "gBoLMagicSwordBlade.h"
+#include "gBoLValentine.h"
+
 
 // Great Fairy's Sword
 #include "gBoLDS1Claymore.h"
@@ -49,12 +54,19 @@ extern Gfx object_mir_ray_DL_0004B0[];
 
 // Swords
 extern Gfx* gPlayerSwords[];
-extern Gfx gLinkHumanKokiriSwordDL[];
-extern Gfx gLinkHumanKokiriSwordMtx;
-extern Gfx gLinkHumanRazorSwordDL[];
-extern Gfx gLinkHumanRazorSwordMtx;
-extern Gfx gLinkHumanGildedSwordDL[];
-extern Gfx gLinkHumanGildedSwordMtx;
+
+// Kokiri Sword
+extern Gfx* gKokiriSwordBladeDL[];
+extern Gfx* gKokiriSwordHandleDL[];
+
+// Razor Sword
+extern Gfx* gRazorSwordBladeDL[];
+extern Gfx* gRazorSwordHandleDL[];
+
+// Gilded Sword
+extern Gfx* gLinkHumanGildedSwordHandleDL[];
+extern Gfx* gLinkHumanGildedSwordBladeDL[];
+extern Gfx* gLinkHumanGildedSwordSheathDL[];
 extern Gfx gLinkHumanGreatFairysSwordDL[];
 extern Gfx gLinkHumanGreatFairysSwordMtx;
 
@@ -90,6 +102,13 @@ enum BirdMirrorShieldModel {
     MIRRORSHIELD_OFF,
     MIRRORSHIELD_OOTIMPROVED,
     MIRRORSHIELD_ALTTP,
+    MIRRORSHIELD_MAGIC,
+};
+
+enum BirdGildedSwordModel {
+    GILDEDSWORD_OFF,
+    GILDEDSWORD_MAGICSWORD,
+    GILDEDSWORD_VALENTINE,
 };
 
 void* gRam;
@@ -178,6 +197,48 @@ RECOMP_HOOK_RETURN("DmaMgr_ProcessRequest") void after_dma() {
             break;
         case MIRRORSHIELD_ALTTP:
         gSPBranchList(to_patch_mirrorshield , gBoLALTTPMirrorShield);
+            break;
+        case MIRRORSHIELD_MAGIC:
+        gSPBranchList(to_patch_mirrorshield , gBoLMagicShield);
+            break;
+        }
+        Gfx* to_patch_gildedswordblade = Lib_SegmentedToVirtual(gLinkHumanGildedSwordBladeDL);
+        switch (recomp_get_config_u32("bird_gildedsword_model"))
+        {
+        case GILDEDSWORD_OFF:
+            ;
+            break;
+        case GILDEDSWORD_MAGICSWORD:
+        gSPBranchList(to_patch_gildedswordblade , gBoLMagicSwordBlade);
+            break;
+        case GILDEDSWORD_VALENTINE:
+        gSPBranchList(to_patch_gildedswordblade , gEmptyDL);
+            break;
+        }
+        Gfx* to_patch_gildedswordhilt = Lib_SegmentedToVirtual(gLinkHumanGildedSwordHandleDL);
+        switch (recomp_get_config_u32("bird_gildedsword_model"))
+        {
+        case GILDEDSWORD_OFF:
+            ;
+            break;
+        case GILDEDSWORD_MAGICSWORD:
+        gSPBranchList(to_patch_gildedswordhilt , gBoLMagicSwordHilt);
+            break;
+        case GILDEDSWORD_VALENTINE:
+        gSPBranchList(to_patch_gildedswordhilt , gBoLValentine);
+            break;
+        }
+        Gfx* to_patch_gildedswordsheath = Lib_SegmentedToVirtual(gLinkHumanGildedSwordSheathDL);
+        switch (recomp_get_config_u32("bird_gildedsword_model"))
+        {
+        case GILDEDSWORD_OFF:
+            ;
+            break;
+        case GILDEDSWORD_MAGICSWORD:
+            ;
+            break;
+        case GILDEDSWORD_VALENTINE:
+        gSPBranchList(to_patch_gildedswordsheath , gEmptyDL);
             break;
         }
         gSegments[0x06] = old_segment_6;

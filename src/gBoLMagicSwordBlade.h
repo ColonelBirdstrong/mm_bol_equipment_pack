@@ -1,0 +1,7 @@
+extern u64 gBoLMagicSwordBlade_tex1_128x16_6d7cf113ea28b455_14_ci8[];
+extern u64 gBoLMagicSwordBlade_tex1_128x16_6d7cf113ea28b455_14_pal_rgba16[];
+extern Vtx gBoLMagicSwordBlade_gBoLMagicSwordBlade_mesh_layer_Opaque_vtx_cull[8];
+extern Vtx gBoLMagicSwordBlade_gBoLMagicSwordBlade_mesh_layer_Opaque_vtx_0[64];
+extern Gfx gBoLMagicSwordBlade_gBoLMagicSwordBlade_mesh_layer_Opaque_tri_0[];
+extern Gfx mat_gBoLMagicSwordBlade_MagicSword_Blade_f3d_layerOpaque[];
+extern Gfx gBoLMagicSwordBlade[];
