@@ -105,5 +105,9 @@ build/src/birdequipment.o: src\birdequipment.c include\modding.h \
   mm-decomp\include\macros.h include\recomputils.h \
   include\recompconfig.h src\gBoLMM3DHeroShield.h src\gBoLKiteShield.h \
   src\gBoLOoT3DHyShield.h src\gBoLSTShield.h src\gBoLFighterShield.h \
-  src\gBoLRedShield.h src\gBoLDS1Claymore.h \
-  src\gBoLMoonlightGreatsword.h
+  src\gBoLRedShield.h src\gBoLImprovedMirrorShield.h \
+  src\gBoLALTTPMirrorShield.h src\gBoLMagicShield.h \
+  src\gBoLMagicSwordHilt.h src\gBoLMagicSwordBlade.h src\gBoLValentine.h \
+  src\gBoLDS1Claymore.h src\gBoLMoonlightGreatsword.h \
+  src\gBoLPursuerUGS.h src\gBoLUltimaWeapon.h \
+  src\gBoLBurningDragonsword.h src\gJoJoStoneMask.h

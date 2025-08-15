@@ -15,10 +15,7 @@ display_name = "Bird of Light's Equipment Pack"
 
 # The description that will show up when this mod is displayed in the mod menu. This should be human readable.
 description =  """
-This is an example mod for Majora's Mask: Recompiled that can be used as a template for creating mods. \
-When this mod is enabled, you will always perform a quickspin when swinging your sword.
-
-For more details, see https://github.com/Zelda64Recomp/MMRecompModTemplate."""
+Allows you to swap out some equipment models for some different ones!"""
 
 # A short description that will show up in this mod's entry in the mod list. This should be human readable and kept short
 # to prevent it from being cut off due to the limited space.
@@ -59,7 +56,7 @@ func_reference_syms_file = "Zelda64RecompSyms/mm.us.rev1.syms.toml"
 data_reference_syms_files = [ "Zelda64RecompSyms/mm.us.rev1.datasyms.toml", "Zelda64RecompSyms/mm.us.rev1.datasyms_static.toml" ]
 
 # Additional files to include in the mod.
-additional_files = [ ]
+additional_files = [ "thumb.png" ]
 
 [[manifest.config_options]]
 id = "bird_heroshield_model"
@@ -70,9 +67,33 @@ options = [ "Vanilla Shield", "MM3D Hero's Shield", "BotW Kite Shield", "OoT3D H
 default = "Vanilla Shield"
 
 [[manifest.config_options]]
+id = "bird_gildedsword_model"
+name = "Gilded Sword model"
+description = "Pause and unpause to reload!"
+type = "Enum"
+options = [ "Vanilla Gilded Sword", "Magic Sword", "Valentine" ]
+default = "Vanilla Gilded Sword"
+
+[[manifest.config_options]]
+id = "bird_mirrorshield_model"
+name = "Mirror Shield model"
+description = "Pause and unpause to reload!"
+type = "Enum"
+options = [ "Vanilla Mirror Shield", "Improved OoT Shield", "ALTTP Mirror Shield", "Magic Shield" ]
+default = "Vanilla Mirror Shield"
+
+[[manifest.config_options]]
 id = "bird_greatfairysword_model"
 name = "Great Fairy's Sword model"
 description = "Pause and unpause to reload!"
 type = "Enum"
-options = [ "Vanilla GFS", "Claymore (Dark Souls)", "Moonlight Greatsword" ]
+options = [ "Vanilla GFS", "Claymore (Dark Souls)", "Moonlight Greatsword", "Pursuer's Greatsword", "Ultima Weapon", "Burning Dragon Sword" ]
 default = "Vanilla GFS"
+
+[[manifest.config_options]]
+id = "bird_stonemask_model"
+name = "Stone Mask model"
+description = "Pause and unpause to reload!"
+type = "Enum"
+options = [ "Vanilla Stone Mask", "JoJo Stone Mask" ]
+default = "Vanilla Stone Mask"

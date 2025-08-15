@@ -1,0 +1,16 @@
+extern u64 gBoLMagicSwordHilt_Guard_Index_ci4[];
+extern u64 gBoLMagicSwordHilt_Guard_Index_pal_rgba16[];
+extern u64 gBoLMagicSwordHilt_Triforce_ci8[];
+extern u64 gBoLMagicSwordHilt_Triforce_pal_rgba16[];
+extern u64 gBoLMagicSwordHilt_Handle_Fast_rgba16[];
+extern Vtx gBoLMagicSwordHilt_gBoLMagicSwordHilt_mesh_layer_Opaque_vtx_cull[8];
+extern Vtx gBoLMagicSwordHilt_gBoLMagicSwordHilt_mesh_layer_Opaque_vtx_0[302];
+extern Gfx gBoLMagicSwordHilt_gBoLMagicSwordHilt_mesh_layer_Opaque_tri_0[];
+extern Vtx gBoLMagicSwordHilt_gBoLMagicSwordHilt_mesh_layer_Opaque_vtx_1[56];
+extern Gfx gBoLMagicSwordHilt_gBoLMagicSwordHilt_mesh_layer_Opaque_tri_1[];
+extern Vtx gBoLMagicSwordHilt_gBoLMagicSwordHilt_mesh_layer_Opaque_vtx_2[63];
+extern Gfx gBoLMagicSwordHilt_gBoLMagicSwordHilt_mesh_layer_Opaque_tri_2[];
+extern Gfx mat_gBoLMagicSwordHilt_MagicSword_Guard_f3d_layerOpaque[];
+extern Gfx mat_gBoLMagicSwordHilt_MagicSword_Gems_f3d_layerOpaque[];
+extern Gfx mat_gBoLMagicSwordHilt_MagicSword_Handle_f3d_layerOpaque[];
+extern Gfx gBoLMagicSwordHilt[];

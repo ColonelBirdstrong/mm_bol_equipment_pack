@@ -21,6 +21,31 @@
                 "type" : "Enum"
             },
             {
+                "default" : "Vanilla Gilded Sword",
+                "description" : "Pause and unpause to reload!",
+                "id" : "bird_gildedsword_model",
+                "name" : "Gilded Sword model",
+                "options" : [
+                    "Vanilla Gilded Sword",
+                    "Magic Sword",
+                    "Valentine"
+                ],
+                "type" : "Enum"
+            },
+            {
+                "default" : "Vanilla Mirror Shield",
+                "description" : "Pause and unpause to reload!",
+                "id" : "bird_mirrorshield_model",
+                "name" : "Mirror Shield model",
+                "options" : [
+                    "Vanilla Mirror Shield",
+                    "Improved OoT Shield",
+                    "ALTTP Mirror Shield",
+                    "Magic Shield"
+                ],
+                "type" : "Enum"
+            },
+            {
                 "default" : "Vanilla GFS",
                 "description" : "Pause and unpause to reload!",
                 "id" : "bird_greatfairysword_model",
@@ -28,13 +53,27 @@
                 "options" : [
                     "Vanilla GFS",
                     "Claymore (Dark Souls)",
-                    "Moonlight Greatsword"
+                    "Moonlight Greatsword",
+                    "Pursuer's Greatsword",
+                    "Ultima Weapon",
+                    "Burning Dragon Sword"
+                ],
+                "type" : "Enum"
+            },
+            {
+                "default" : "Vanilla Stone Mask",
+                "description" : "Pause and unpause to reload!",
+                "id" : "bird_stonemask_model",
+                "name" : "Stone Mask model",
+                "options" : [
+                    "Vanilla Stone Mask",
+                    "JoJo Stone Mask"
                 ],
                 "type" : "Enum"
             }
         ]
     },
-    "description" : "This is an example mod for Majora's Mask: Recompiled that can be used as a template for creating mods. When this mod is enabled, you will always perform a quickspin when swinging your sword.\n\nFor more details, see https://github.com/Zelda64Recomp/MMRecompModTemplate.",
+    "description" : "Allows you to swap out some equipment models for some different ones!",
     "display_name" : "Bird of Light's Equipment Pack",
     "game_id" : "mm",
     "id" : "bol_birdequipment",
