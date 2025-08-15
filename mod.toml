@@ -74,5 +74,21 @@ id = "bird_greatfairysword_model"
 name = "Great Fairy's Sword model"
 description = "Pause and unpause to reload!"
 type = "Enum"
-options = [ "Vanilla GFS", "Claymore (Dark Souls)", "Moonlight Greatsword", "Pursuer's Greatsword", "Ultima Weapon" ]
+options = [ "Vanilla GFS", "Claymore (Dark Souls)", "Moonlight Greatsword", "Pursuer's Greatsword", "Ultima Weapon", "Burning Dragon Sword" ]
 default = "Vanilla GFS"
+
+[[manifest.config_options]]
+id = "bird_stonemask_model"
+name = "Stone Mask model"
+description = "Pause and unpause to reload!"
+type = "Enum"
+options = [ "Vanilla Stone Mask", "JoJo Stone Mask" ]
+default = "Vanilla Stone Mask"
+
+[[manifest.config_options]]
+id = "bird_mirrorshield_model"
+name = "Mirror Shield model"
+description = "Pause and unpause to reload!"
+type = "Enum"
+options = [ "Vanilla Mirror Shield", "Improved OoT Shield", "ALTTP Mirror Shield" ]
+default = "Vanilla Mirror Shield"
